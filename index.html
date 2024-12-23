@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>域名端口检测工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>域名端口检测工具</h1>
+        
+        <div class="input-section">
+            <input type="text" id="hostInput" placeholder="输入域名 (例如: example.com)" />
+            <input type="number" id="portInput" placeholder="输入端口号 (例如: 80)" />
+            <button onclick="checkConnection()">开始检测</button>
+        </div>
+
+        <div class="result-section">
+            <div class="result-box">
+                <h3>DNS 解析结果</h3>
+                <div id="dnsResult">等待检测...</div>
+            </div>
+            <div class="result-box">
+                <h3>端口检测结果</h3>
+                <div id="portResult">等待检测...</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
